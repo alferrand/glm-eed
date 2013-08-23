@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<!DOCTYPE html>
+<html ng-app>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Nueva Intranet</title>
@@ -25,8 +25,12 @@
     </div>
     <div class="login-module">
       <h3>Ingrese con su cuenta de:</h3>
-      <p align="center"><img src="img/google.png" width="140" height="50" alt="Google" /> <img src="img/yahoo.png" width="140" height="50" alt="Yahoo!" /><img src="img/outlook.png" width="140" height="50" alt="Outlook" />
-        <img src="img/glm.png" width="140" height="50" alt="Gimnasio La Montaña - Correo" ng-show="glm" /></p>
+      <p align="center">
+        <img src="img/google.png" width="140" height="50" alt="Google" ng-show="google"/> 
+        <img src="img/yahoo.png" width="140" height="50" alt="Yahoo!" ng-show="yahoo"/>
+        <img src="img/outlook.png" width="140" height="50" alt="Outlook" ng-show="outlook"/>
+        <img src="img/glm.png" width="140" height="50" alt="Gimnasio La Montaña - Correo" ng-show="glm" />
+      </p>
     </div>
     <div class="login-module">
       <h3>Use su contraseña del GLM:</h3>

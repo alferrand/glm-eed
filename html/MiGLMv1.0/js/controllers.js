@@ -4,6 +4,10 @@
 
 function CtrlForm($scope) {
   $scope.updateOptions = function () {
-    $scope.glm = $scope.email.endsWith('@glm.edu.co');
+  	var input = $scope.email;
+    $scope.glm = $scope.email.endsWithGlm(input);
+    $scope.outlook = $scope.email.endsWithOutlook(input);
+    $scope.google = $scope.email.endsWithGoogle(input);
+    $scope.yahoo = $scope.email.endsWithYahoo(input);
   }
 }
