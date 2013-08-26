@@ -23,7 +23,7 @@
         </label>
       </p>
     </div>
-    <div class="login-module">
+    <div class="login-module" ng-show="google || yahoo || outlook || glm">
       <h3>Ingrese con su cuenta de:</h3>
       <p align="center">
         <img src="img/google.png" width="140" height="50" alt="Google" ng-show="google"/> 
@@ -32,7 +32,7 @@
         <img src="img/glm.png" width="140" height="50" alt="Gimnasio La Montaña - Correo" ng-show="glm" />
       </p>
     </div>
-    <div class="login-module">
+    <div class="login-module" ng-show="user">
       <h3>Use su contraseña del GLM:</h3>
       <p>
         <label>
@@ -40,26 +40,15 @@
         </label>
       </p>
       <p><a href="#" class="login-button" id="login-ok">Ingresar</a></p>
-      <p><a href="#">Olvidé mi contraseña</a></p>
-      <div class="clearfix"></div>
-    </div>
-    <div class="login-module">
-      <h3>Use su contraseña del GLM:</h3>
-      <p>
-        <label>
-          <input type="password" name="pass2" id="pass2" />
-        </label>
-      </p>
       <p class="highlight">Verifique su contraseña</p>
-      <p><a href="#" class="login-button" id="login-ok">Ingresar</a></p>
       <p><a href="#">Olvidé mi contraseña</a></p>
       <div class="clearfix"></div>
     </div>
-    <div class="login-module">
-      <h3>Usuario no registrado:</h3>
+    <div class="login-module" ng-show="newpassword">
+      <h3>Por favor solicite su contraseña:</h3>
       <p align="center"><a href="#" class="login-button">Solicite su contraseña</a></p>
     </div>
-    <div class="login-module">
+    <div class="login-module" ng-show="newregister">
       <h3 class="highlight">Su usuario no está registrado en nuestro sistema.</h3>
       <ol>
         <li> Verifique que su correo esté escrito correctamente.</li>
